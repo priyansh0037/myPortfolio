@@ -11,7 +11,7 @@ import blogthumb from "../Assets/blogthuumbnail.jpeg"
 
 const Portfolio = () => {
   return (
-    <div id="Portfolio" className=" portfolio flex items-center justify-center flex-col h-[90vh]    text-center  pt-[5rem] ">
+    <div id="Portfolio" className=" portfolio flex items-center justify-center flex-col h-[90vh]    text-center  pt-[5rem] sm:pt-0 ">
       <span className="text-blackPrimary  text-[3rem] font-bold dark:text-white ">
         Recent Projects
       </span>

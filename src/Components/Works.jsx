@@ -11,7 +11,7 @@ const Works = () => {
   const transition = {duration: 3.5, type: "spring"}
 
   return (
-    <div className='lg:pl-[2rem] lg:pr-[2rem] px-4 lg:px-0 flex lg:flex-row flex-col lg:h-[80vh] mt-[4rem] h-[180vh]  '>
+    <div className='lg:pl-[2rem] lg:pr-[2rem] px-4 lg:px-0 flex lg:flex-row flex-col lg:h-[80vh] mt-[4rem] h-[174vh]  '>
 
      {/* left */}
      <div className='flex flex-col relative gap-2   '>
@@ -44,7 +44,7 @@ const Works = () => {
 
 {/* right side */}
 
-<div className=" lg:left-[8rem] scale-[65%] md:scale-90 lg:scale-100 left-[-8rem] md:left-[3rem] mt-[5rem] 
+<div className=" lg:left-[8rem] scale-[65%] md:scale-90 lg:scale-100 left-[-7.5rem] md:left-[3rem]  mt-[6rem] 
 lg:mt-0 relative ">
 
   <motion.div 
