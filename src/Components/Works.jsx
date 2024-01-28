@@ -27,7 +27,7 @@ const Works = () => {
 <br />
 <br />
 
-<span className='font-semibold text-red-500 dark:text-red-400'> Instagram Clone: </span> A web application closely resembling Instagram, allowing users to create accounts, post images and videos, follow other users, engage with content through likes and comments, and explore a social feed, mirroring the popular photo-sharing and networking service.
+<span className='font-semibold text-red-500 dark:text-red-400'> UPCOMING E-Comerce Store </span>Welcome to Ani-Store, your premier MERN stack e-commerce destination. Explore a diverse product catalog with dynamic filters, seamless checkout, and real-time inventory updates. Enjoy personalized profiles, secure transactions, and a responsive design for an elevated shopping experience.
      </span>
 
 <div className='mt-[1rem]'>
