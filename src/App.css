@@ -1,0 +1,127 @@
+*{
+  box-sizing: border-box;
+}
+
+/* work Section */
+.w-right{
+  position: relative;
+}
+
+.w-mainCircle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 9rem;
+  position: relative;
+  width: 24rem;
+  height: 24rem;
+  background: white;
+  border-radius: 100%;
+  top: 2rem;
+  box-shadow: rgba(72, 78, 82, 0.48) 5px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  
+}
+
+
+.w-mainCircle>*{
+  position: absolute;
+}
+
+.w-mainCircle > :nth-child(1){
+  top: -3rem;
+  left: 7rem;
+}
+
+.w-mainCircle > :nth-child(2){
+  top: 8rem;
+  left: -4rem;
+}
+
+.w-mainCircle > :nth-child(3){
+  top: 8rem;
+  left: 7.5rem;
+  
+}
+
+.w-mainCircle > :nth-child(4){
+  top: 8.5rem;
+  left: 19rem;
+}
+
+.w-mainCircle > :nth-child(5){
+  top: 19rem;
+  left: 8rem;
+}
+
+.w-secCircle{
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  border-radius: 100%;
+  border: 5px solid #ebebeb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  background: white;
+}
+
+.w-secCircle > img{
+  transform: scale(0.7);
+}
+
+.w-backCircle{
+  position: absolute;
+  height: 15rem;
+  width: 15rem;
+  border-radius: 100%;
+  z-index: -1;
+}
+
+.blueCircle{
+  background: #1949B8;
+  left: 14rem;
+  top: 0;
+}
+
+.yellowCircle{
+  background:#F5C32C ;
+  left: 14rem;
+  bottom: 0rem;
+}
+
+/* work Section finish */
+
+
+/* swiper */
+.portfolio-slider{
+  margin-top: 3rem;
+  width: 100%;
+}
+
+.portfolio img{
+  filter:  drop-shadow(-12px 15px 13px rgba(0,0,0,0.25));
+}
+
+
+
+
+/* .active {
+  position: relative;
+  display: flex;
+  justify-content: center;
+align-items: center;
+
+  }
+
+  .active:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 6px;
+    height: 6px; 
+    background-color: red; 
+    bottom: -7px;
+    border-radius: 50%;
+    
+  } */

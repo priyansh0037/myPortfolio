@@ -1,0 +1,101 @@
+step1==== sbse pehle humney theme context banaya pura 
+--------------------------------------------------------------------------------
+
+import { createContext, useContext } from "react";
+
+// create a context ye creeate context bhi objects lene ke kbiul ha jese provifder leta tha 
+
+export const ThemeContext = createContext({
+themeMode : "light",
+darkTheme : () => {},
+lightTheme : ()=>{}
+
+})
+
+// step 2 providing the context
+//in love bhiya humney object provider me banya tha but hum yaha object create context me bnaya ha ,and fir theme provider bana kr humeny export kr ddia 
+
+export const ThemeProvider = ThemeContext.Provider
+
+// ab hum yaha bnynge apna ek custom hook jis se hm is sbko use kr paye
+
+export default function useTheme(){
+    return useContext(ThemeContext)
+}
+
+//humney custom hook me hmara yj=heme context retrun kra dia 
+// hm jb jb use context likhte the to hmkjo uske andr hmara context dena pdta tah ab ye problem solve hogyi ha humeny sedha rtrn kra dia na isilie
+
+---------------------------------------------------------------------------
+
+
+step-2) we go in app.jsx 
+
+// IMPORTANT -> tailwind config me jana apko darkMode: "class"
+// ye likhna ha 
+
+
+hum provider me sbhi componets ko wraap kr denge and hum fir us provider me sbhi values denge jo jo humney createContext lke object me bnaye ha 
+
+<ThemeProvider value={{themeMode,darkTheme,lightTheme}}>
+
+isme sare componets aynge
+
+</ThemeProvider>
+
+-> fir hum sbhi functilty define krnge jojo humney context me bnayi thi aur 
+thememode ki state bhi bnynge by def wo light hogi 
+
+   const [themeMode,setThemeMode] = useState('light')
+   // by def ye light hoga 
+
+   const darkTheme = () =>{
+      setThemeMode("dark")
+   }
+
+   const lightTheme = () => {
+      setThemeMode("light")
+   }
+// yaha humeny themes set kr di using light and drk functions 
+// is se kch frk ni pdega ,and hm chate ha ki ye run sirf kisis event pr ho to hm use effct use krnge
+
+useEffect(()=>{
+
+document.querySelector('html').classList.remove("dark" ,"light")
+
+document.querySelector("html").classList.add(themeMode)
+
+},[themeMode])
+
+// agr theme me koi bhi chnge ata ha tb componnt ko rerender kr dena
+
+
+---------------------------------------------------------------------------
+
+at last theme button me jana ha 
+
+
+
+    const {themeMode,lightTheme,darkTheme} = useTheme()
+
+const onChangeButton = (e) =>{
+ const darkModeStatus = e.currentTarget.checked
+
+//agr button checkd ha to drk thme wrna light
+
+ if(darkModeStatus){
+    darkTheme()
+ }else{
+    lightTheme()
+ }
+}
+
+    humney theme button me ek input tag ka use kia ha jiska typ checkbox hai 
+    and isi ke  bassi pr hum totgle krnge theme ko 
+
+                <input
+                type="checkbox"
+                className="sr-only peer"
+                onChange={onChangeButton}
+                checked = {themeMode === 'dark'}
+            />
