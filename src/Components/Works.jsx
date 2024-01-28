@@ -27,7 +27,7 @@ const Works = () => {
 <br />
 <br />
 
-{/* <span className='font-semibold text-red-500 dark:text-red-400'> Instagram Clone: </span> A web application closely resembling Instagram, allowing users to create accounts, post images and videos, follow other users, engage with content through likes and comments, and explore a social feed, mirroring the popular photo-sharing and networking service. */}
+<span className='font-semibold text-red-500 dark:text-red-400'> Instagram Clone: </span> A web application closely resembling Instagram, allowing users to create accounts, post images and videos, follow other users, engage with content through likes and comments, and explore a social feed, mirroring the popular photo-sharing and networking service.
      </span>
 
 <div className='mt-[1rem]'>
