@@ -11,7 +11,7 @@ const Works = () => {
   const transition = {duration: 3.5, type: "spring"}
 
   return (
-    <div className='lg:pl-[2rem] lg:pr-[2rem] px-4 lg:px-0 flex lg:flex-row flex-col lg:h-[80vh] mt-[4rem] h-[190vh] '>
+    <div className='lg:pl-[2rem] lg:pr-[2rem] px-4 lg:px-0 flex lg:flex-row flex-col lg:h-[80vh] mt-[4rem] h-[190vh] sm:h-[170vh] '>
 
      {/* left */}
      <div className='flex flex-col relative gap-2   '>
